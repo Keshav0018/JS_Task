@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pomodoro Timer</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">Pomodoro timer</h1>
+      <div class="clock">
+        <div class="tabs">
+          <button class="pomodoro-tab tab tab--active">Pomodoro</button>
+          <button class="short-tab tab">Short Break</button>
+          <button class="long-tab tab">Long Break</button>
+        </div>
+
+        <div class="display-time-block">
+          <p class="reset-btn">🔄</p>
+          <p class="time">
+            <span class="min">25</span>:<span class="sec">00</span>
+          </p>
+        </div>
+      </div>
+      <div class="options">
+        <button class="option-btn start-btn">Start</button>
+        <button class="option-btn next-btn">
+          Next <span class="next-icon"> ▶️</span>
+        </button>
+        <button class="option-btn pause-btn">
+          Count : <span class="count">1</span>
+        </button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

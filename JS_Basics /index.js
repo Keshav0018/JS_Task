@@ -139,3 +139,11 @@ while (state != false) {
     state = false;
   }
 }
+// OOPS
+const student = {
+  name: "Keshav",
+  rolNo: 10,
+  printMarks: function () {
+    console.log(this.name);
+  },
+};
