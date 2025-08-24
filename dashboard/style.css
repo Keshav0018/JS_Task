@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 50.5%;
+}
+
+body {
+  background-color: rgba(73, 182, 255, 0.11);
+}
+
+.container {
+  margin-top: 4rem;
+  margin-left: auto;
+  margin-right: auto;
+  height: 85vh;
+  width: 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats-graph {
+  width: 100%;
+  height: 100%;
+}
+
+.dashboard {
+  position: relative;
+  border: 4px solid #212529;
+  background-color: #f03e3e;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90%;
+  width: 70%;
+
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 2.4rem;
+  padding-bottom: 10rem;
+}
+
+.img-box {
+  margin-top: 1.2rem;
+  /* background-color: aliceblue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 15px solid #ced4da;
+  border-right: 15px solid #ced4da;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.6)
+    ),
+    url("./pokemon-in-the-wild.png");
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px);
+}
+
+.pokemon-img {
+  width: 45%;
+}
+
+.pokemon-stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: aquamarine; */
+  border-bottom: 15px solid #ced4da;
+  border-left: 15px solid #ced4da;
+}
+
+.pokemon-moves {
+  /* background-color: coral; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 15px solid #ced4da;
+  border-right: 15px solid #ced4da;
+  font-size: 1.4rem;
+}
+
+.pokemon-details {
+  margin-top: 1.2rem;
+  /* background-color: floralwhite; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+
+  border-top: 15px solid #ced4da;
+  border-left: 15px solid #ced4da;
+  padding: 1.2rem;
+}
+
+.moves-select {
+  font-size: 1.4rem;
+  background-color: #ffd43b;
+  color: #fff;
+  padding: 0.8rem 0.8rem;
+  font-weight: 600;
+  color: #571d06;
+  margin-bottom: 1.2rem;
+}
+
+.input-form {
+  font-size: 2rem;
+  grid-column: 1/-1;
+
+  color: #fff5f5;
+  display: flex;
+  align-items: center;
+  gap: 1.3rem;
+  justify-content: space-between;
+}
+
+.submit-btn {
+  width: 6rem;
+  height: 6rem;
+  font-size: 1.8rem;
+  background-color: #4dabf7;
+  /* padding: 0.4rem 1.6rem; */
+  border: 3px solid #fff;
+  border-radius: 200px;
+  color: #e7f5ff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+section {
+  /* padding: 3.2rem; */
+  font-size: 1.8rem;
+  background-color: #868e96;
+  border-radius: 3px;
+  padding: 1.2rem;
+}
+
+.input-name {
+  background-color: #20c997;
+  /* border: 1px slid black; */
+
+  /* border-radius: 8px; */
+  font-size: 1.8rem;
+  color: #e6fcf5;
+  border: 1px solid black;
+  outline: none;
+  padding: 0.6rem;
+  font-weight: 600;
+  margin-left: 1.2rem;
+}
+
+.pokemon-details p {
+  width: 100%;
+  background-color: #f8f9fa;
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  border-radius: 10px;
+}
+
+.move-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+}
+
+.moves-list {
+  color: #2b0e03;
+  padding: 2rem;
+}
+.move-info p {
+  font-size: 1.4rem;
+}
+
+.navigate-btns {
+  grid-column: 1/-1;
+  justify-self: center;
+  height: 30rem;
+}
+
+.btn-nav {
+  position: absolute;
+  border: none;
+  font-size: 2.8rem;
+  background-color: transparent;
+}
+
+.upgrade-pokemon-btn {
+  top: 89%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.degrade-pokemon-btn {
+  bottom: 0%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.next-pokemon-btn {
+  transform: translate(-50%);
+  left: 53.5%;
+  top: 92%;
+}
+.nothing-pokemon-btn {
+  top: 92%;
+  transform: translate(-50%);
+}
+
+.previous-pokemon-btn {
+  top: 92%;
+  right: 50%;
+  transform: translate(-50%);
+}
+
+.controller {
+  box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.198);
+  color: transparent;
+  background-color: #868e96;
+}

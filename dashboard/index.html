@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="container">
+      
+      <div class="dashboard">
+        <form class="input-form">
+          <div class="input">
+          <label for="pokemon_name">Enter pokemon name:</label>
+          <input
+            class="input-name"
+            type="text"
+            name="pokemon_name"
+            id="pokemon_name"
+          />
+          </div>
+          <button class="submit-btn">find</button>
+        </form>
+       
+        <!-- <section class="pokemon-details">
+            <p id="p-name">Name: pikachu</p>
+            <p id="p-id">ID: 25</p>
+            <p id="p-height">Height: 0.4 m</p>
+            <p id="p-weight">Weight: 6.0 kg</p>
+            <p id="p-types">Types: <span class="type">electric</span></p>
+            <p id="p-abilities">Abilities: static,lightning-rod</p>
+        </section>
+
+        <section class="img-box"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/25.svg" class="pokemon-img"/></section>
+
+        <section class="pokemon-stats">
+            <img src="./stats.png" class="stats-graph"/>
+        </section>
+
+      -->
+        <section class="pokemon-moves">
+  <select id="moves" class="moves-select">
+
+  </select> 
+
+  <div class="move-info">
+  <ul class="moves-list">
+   <li> <p id="m-name">Name: -</p></li>
+    <li><p id="m-type">Type: -</p></li>
+    <li><p id="m-power">Power: -</p></li>
+    <li><p id="m-accuracy">Accuracy: -</p></li>
+    <li><p id="m-class">Damage Class: -</p></li>
+    <li><p id="m-effect">Effect: -</p></li>
+  </div>
+        </section> 
+
+
+        <div class="navigate-btns" >
+          <button class="upgrade-pokemon-btn btn-nav">🔼</button>
+          <button class="previous-pokemon-btn btn-nav">◀️</button>
+          <button class="nothing-pokemon-btn btn-nav">⚪️</button>
+          <button class="next-pokemon-btn btn-nav">▶️</button>
+          <button class="degrade-pokemon-btn btn-nav">🔽</button>
+      
+        </div>
+    </div>
+
+   
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </body>
+</html>
