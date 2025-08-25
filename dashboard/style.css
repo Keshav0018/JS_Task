@@ -10,6 +10,7 @@ html {
 
 body {
   background-color: rgba(73, 182, 255, 0.11);
+  transition: filter ease 0.3;
 }
 
 .container {
